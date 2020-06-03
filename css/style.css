@@ -1,0 +1,171 @@
+/*
+Colors used:
+Primary pink: #e84393;
+Secondary pink: #9c1e5a;
+Primary blue: #258c9c
+Secondary blue: #2ccfe8
+Accent yellow: #e8d85a;
+Light gray: #ebedef;
+Dark gray: #707070;
+*/
+html {
+  font-size: 131.3%;
+}
+
+/*21px*/
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 1.15rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #000000;
+}
+
+h1, h2, h3, h4 {
+  margin: 2.75rem 0 1.05rem;
+  line-height: 1.15;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+  font-size: 3.052em;
+  font-weight: 400;
+  color: #9c1e5a;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.441em;
+  font-weight: 400;
+  color: #9c1e5a;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.953em;
+  font-weight: 400;
+  color: #9c1e5a;
+}
+
+h4 {
+  font-size: 1.563em;
+  font-weight: 700;
+  font-weight: 700;
+  color: #e84393;
+}
+
+small, .text_small {
+  font-size: 0.8em;
+  color: #707070
+}
+
+.large {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 1.953em !important;
+}
+
+a:visited {
+  /* visited link */
+  color: #551A8B;
+}
+
+a:hover,
+a:focus {
+  color: ##258c9c;
+  text-decoration: underline;
+}
+
+a:active {
+  /* selected link */
+  color: #2ccfe8
+}
+
+.btn {
+  display: inline-block;
+  background-color: #258c9c;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 10px;
+  border-bottom: 2px solid #12474F;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #12474F;
+}
+
+.btn:active {
+  background-color: #258c9c;
+}
+
+img {
+  width: 100%;
+}
+
+.nav {
+  background-color: #e84393;
+}
+
+.nav a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-variant: small-caps;
+  font-weight: 700;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #e8d85a !important;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+#main {
+  text-decoration: underline !important;
+  text-decoration-color: #e8d85a !important;
+}
+
+#contact {
+  background-color: #e84393;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+#contact p {
+  color: #ffffff;
+}
+
+#contact a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-variant: small-caps;
+  font-weight: 700;
+}
+
+#contact a:hover,
+#contact a:focus {
+  color: #e8d85a !important;
+}
+
+#contact ul {
+  list-style: none;
+}
+
+.disclaimer {
+  font-size: 0.5em !important;
+}
