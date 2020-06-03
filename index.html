@@ -3,25 +3,29 @@
 
 <head>
   <meta charset="utf-8">
-  <title>About Dylan Scacchetti | UX/UI Designer, New York</title>
+  <title>Dylan Scacchetti | UX/UI Designer, New York</title>
   <meta name="description" content="Learn more about Dylan Scacchetti, as well as more about his interests and his experience." />
   <meta name="author" content="Dylan Scacchetti" />
   <link rel="shortcut icon" href="img\assets\favicon\favicon.ico" type="image/ico">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
   <!-- HEADER -->
   <header id="top">
-    <div>
+    <div class="nav">
       <a href="index.html" title="home">
-        <img src="img/assets/dylan-scacchetti-logo-black.svg" alt="dylan scacchetti" width="150" height="50">
+        <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" width="150" height="50">
       </a>
       <nav>
         <ul>
-          <li><a href="index.html" title="work">Work</a></li>
-          <li><a href="about.html" title="about">About</a></li>
-          <li><a href="#contact" title="contact">Contact</a></li>
+          <li><a href="index.html" title="work" id="main">work</a></li>
+          <li><a href="about.html" title="about">about</a></li>
+          <li><a href="#contact" title="contact">contact</a></li>
         </ul>
       </nav>
     </div>
@@ -46,7 +50,7 @@
         <div>
           <!-- COLUMN 2 -->
           <h1>Hello! I’m Dylan.</h1>
-          <p style="font-size:150%;">
+          <p class="large">
             I'm a UX researcher, designer, & illustrator based in New York.
           </p>
           <p>
@@ -55,7 +59,7 @@
           <p>
             Ever since entering the real world, I've worked as a digital marketer specializing in SEO, UX, design, illustartion, and web analytics.
           </p>
-          <a href="#">More about me</a><!-- BUTTON -->
+          <a href="about.html" class="btn">More about me</a><!-- BUTTON -->
         </div>
         <!-- END COLUMN 2 -->
       </div>
@@ -81,16 +85,14 @@
 
         <!-- COLUMN 2 -->
         <div>
-          <a href="ink-tank.html">
             <h3>Ink Tank</h3>
-          </a>
           <p>
             Ink Tank is a social app for tattoo lovers and tattoo artists. With Ink Tank, users can search for tattoo inspiration, share their favorite designs, and even schedule appointments with a tattoo artist near them.
           </p>
           <p>
             For this project, I used Adobe XD, Photoshop, Illustrator, and After Effects. Check out the project page to learn more about my process.
           </p>
-          <a href="ink-tank.html">View Ink Tank</a><!-- BUTTON -->
+          <a href="ink-tank.html" class="btn">View Ink Tank</a><!-- BUTTON -->
         </div>
         <!-- END COLUMN 2 -->
 
@@ -118,7 +120,7 @@
           <p>
             For this project, I used pen and paper, Adobe Photoshop, and Prott. This was my first project, and taught me the foundations for good research and design.
           </p>
-          <a href="#">View WordStorm</a><!-- BUTTON -->
+          <a href="#" class="btn">View WordStorm</a><!-- BUTTON -->
         </div>
         <!-- END COLUMN 2 -->
 
@@ -138,7 +140,7 @@
       <!-- ROW 1 -->
       <div>
         <a href="index.html" title="home">
-          <img src="img\assets\dylan-scacchetti-logo-black.svg" alt="dylan scacchetti" width="150" height="50">
+          <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" width="150" height="50">
         </a>
       </div>
       <!-- END ROW 1-->
@@ -149,9 +151,9 @@
         <div>
           <nav>
             <ul>
-              <li><a href="index.html" title="work">Work</a></li>
-              <li><a href="about.html" title="about">About</a></li>
-              <li><a href="mailto:ux.dscacchetti@gmail.com" title="contact">Contact</a></li>
+              <li><a href="index.html" title="work">work</a></li>
+              <li><a href="about.html" title="about">about</a></li>
+              <li><a href="mailto:ux.dscacchetti@gmail.com" title="contact">contact</a></li>
             </ul>
           </nav>
         </div>
@@ -159,14 +161,14 @@
 
         <!-- COLUMN 2-->
         <div>
-          <p>
+          <p class="large">
             Get in touch.
           </p>
           <p>
             Feel free to talk to me about UX design, projects, art, or just say hello!
           </p>
           <div>
-            <a href="mailto:ux.dscacchetti@gmail.com">
+            <a href="mailto:ux.dscacchetti@gmail.com" class="btn">
               Send email
             </a>
           </div>
@@ -200,7 +202,7 @@
             </ul>
           </div>
           <div>
-            <a href="#top">Back to top</a>
+            <a href="#top">back to top</a>
           </div>
         </div>
         <!-- END COLUMN 3 -->
@@ -209,7 +211,7 @@
 
       <!-- ROW 3 -->
       <div>
-        <p>
+        <p class="disclaimer">
           &copy; 2020 Dylan Scacchetti. All Rights Reserved.
         </p>
       </div>
