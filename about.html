@@ -7,32 +7,35 @@
   <meta name="description" content="Learn more about Dylan Scacchetti, as well as more about his interests and his experience." />
   <meta name="author" content="Dylan Scacchetti" />
   <link rel="shortcut icon" href="img\assets\favicon\favicon.ico" type="image/ico">
-</head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
 
-<body>
+  <body>
 
-  <!-- HEADER -->
-  <header id="top">
-    <div>
-      <a href="index.html" title="home">
-        <img src="img/assets/dylan-scacchetti-logo-black.svg" alt="dylan scacchetti" width="150" height="50">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html" title="work">Work</a></li>
-          <li><a href="about.html" title="about">About</a></li>
-          <li><a href="#contact" title="contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- END HEADER -->
-
+    <!-- HEADER -->
+    <header id="top">
+      <div class="nav">
+        <a href="index.html" title="home">
+          <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html" title="work">work</a></li>
+            <li><a href="about.html" title="about" id="main">about</a></li>
+            <li><a href="#contact" title="contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- END HEADER -->
   <!-- MAIN -->
   <main>
 
     <!-- HEADING -->
-    <div>
+    <div id="hero">
       <div>
         <h1>About Dylan Scacchetti</h1>
       </div>
@@ -51,7 +54,7 @@
       <!-- END PICTURE -->
 
       <!-- STORY -->
-      <div>
+      <div id="story">
         <h2>My story</h2>
         <p>
           I grew up in the small town of Ballston Lake, NY, and went on to pursue a degree in Animation & Illustration at the State University of New York at Fredonia, just off Lake Erie. Halfway through my college career, I added a 2nd major in
@@ -61,13 +64,13 @@
           After graduating in 2017, I went on to work at a digital marketing agency where I worked as part of a team to build, audit, and improve websites for SEO, user experience, and goal conversion. While working at the agency, I kept
           stumbling across articles discussing UX Design, and the more I read, the more I wanted to know. In 2018, I signed up for a course on UX Design with CareerFoundry, and have been learning more ever since.
         </p>
-        <a href="files\dylan-scacchetti-cv.pdf" target="_blank">View my resume</a>
+        <a href="files\dylan-scacchetti-cv.pdf" class="btn" target="_blank">View my resume</a>
       </div>
       <!-- END STORY -->
 
       <!-- SKILLS -->
       <!-- COLUMN 1 -->
-      <div>
+      <div id="skills">
         <h2>My skills</h2>
         <div>
           <h3>Relevant skills</h3>
@@ -124,7 +127,7 @@
       <!-- ROW 1 -->
       <div>
         <a href="index.html" title="home">
-          <img src="img\assets\dylan-scacchetti-logo-black.svg" alt="dylan scacchetti" width="150" height="50">
+          <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
         </a>
       </div>
       <!-- END ROW 1-->
@@ -132,12 +135,12 @@
       <!-- ROW 2 -->
       <div>
         <!-- COLUMN 1-->
-        <div>
+        <div class="nav">
           <nav>
             <ul>
-              <li><a href="index.html" title="work">Work</a></li>
-              <li><a href="about.html" title="about">About</a></li>
-              <li><a href="mailto:ux.dscacchetti@gmail.com" title="contact">Contact</a></li>
+              <li><a href="index.html" title="work">work</a></li>
+              <li><a href="about.html" title="about">about</a></li>
+              <li><a href="mailto:ux.dscacchetti@gmail.com" title="contact">contact</a></li>
             </ul>
           </nav>
         </div>
@@ -145,14 +148,14 @@
 
         <!-- COLUMN 2-->
         <div>
-          <p>
+          <p class="large">
             Get in touch.
           </p>
           <p>
             Feel free to talk to me about UX design, projects, art, or just say hello!
           </p>
           <div>
-            <a href="mailto:ux.dscacchetti@gmail.com">
+            <a href="mailto:ux.dscacchetti@gmail.com" class="btn">
               Send email
             </a>
           </div>
@@ -165,28 +168,28 @@
             <ul>
               <!-- GITHUB -->
               <li><a href="https://github.com/dscacchetti/" target="_blank" rel="noopener noreferrer" title="GitHub">
-                  <img src="img\assets\github.svg" alt="">
+                  <img src="img\assets\github.svg" class="icon" alt="GitHub">
                 </a></li>
               <!-- TWITTER -->
               <li><a href="https://twitter.com/DylanScacchetti" target="_blank" rel="noopener noreferrer" title="Twitter">
-                  <img src="img\assets\twitter.svg" alt="">
+                  <img src="img\assets\twitter.svg" class="icon" alt="Twitter">
                 </a></li>
               <!-- LINKEDIN -->
               <li><a href="https://www.linkedin.com/in/dylan-scacchetti/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                  <img src="img\assets\linkedin.svg" alt="">
+                  <img src="img\assets\linkedin.svg" class="icon" alt="LinkedIn">
                 </a></li>
               <!-- BEHANCE -->
               <li><a href="https://www.behance.net/dylanscacchetti" target="_blank" rel="noopener noreferrer" title="Behance">
-                  <img src="img\assets\behance.svg" alt="">
+                  <img src="img\assets\behance.svg" class="icon" alt="Behance">
                 </a></li>
               <!-- EMAIL -->
               <li><a href="mailto:ux.dscacchetti@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
-                  <img src="img\assets\mail.svg" alt="">
+                  <img src="img\assets\mail.svg" class="icon" alt="Email">
                 </a></li>
             </ul>
           </div>
-          <div>
-            <a href="#top">Back to top</a>
+          <div class="nav">
+            <a href="#top">back to top</a>
           </div>
         </div>
         <!-- END COLUMN 3 -->
@@ -195,7 +198,7 @@
 
       <!-- ROW 3 -->
       <div>
-        <p>
+        <p class="disclaimer">
           &copy; 2020 Dylan Scacchetti. All Rights Reserved.
         </p>
       </div>

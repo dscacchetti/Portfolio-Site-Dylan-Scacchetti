@@ -7,32 +7,37 @@
   <meta name="description" content="Ink Tank is an app for tattoo lovers and artists. Users can search for tattoos, share inspiration and book appointments with a tattoo artist near them." />
   <meta name="author" content="Dylan Scacchetti" />
   <link rel="shortcut icon" href="img\assets\favicon\favicon.ico" type="image/ico">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
   <!-- HEADER -->
   <header id="top">
-    <div>
+    <div class="nav">
       <a href="index.html" title="home">
-        <img src="img/assets/dylan-scacchetti-logo-black.svg" alt="dylan scacchetti" width="150" height="50">
+        <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
       </a>
       <nav>
         <ul>
-          <li><a href="index.html" title="work">Work</a></li>
-          <li><a href="about.html" title="about">About</a></li>
-          <li><a href="#contact" title="contact">Contact</a></li>
+          <li><a href="index.html" title="work" id="main">work</a></li>
+          <li><a href="about.html" title="about">about</a></li>
+          <li><a href="#contact" title="contact">contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <!-- END HEADER -->
 
+
   <!-- MAIN -->
   <main>
 
     <!-- HEADING -->
-    <div>
+    <div id="hero">
       <div>
         <h1>Ink Tank</h1>
         <p style="font-size:150%;">
@@ -54,7 +59,7 @@
       <!-- END PICTURE -->
 
       <!-- BEGIN ABOUT -->
-      <div>
+      <div id="about-ink-tank">
         <h2>About the project</h2>
         <p>
           The point of this project was to create a mobile app that allows users to explore the inspiration for tattoo designs according to unique preferences like artist and style.
@@ -84,7 +89,7 @@
       <!-- END RESEARCH PICTURE -->
 
       <!-- BEGIN RESEARCH -->
-      <div>
+      <div id="ink-tank-research">
         <h3>Research</h3>
         <p>
           After defining the problem, looking at existing solutions in the market, and analyzing how well they met the needs of users it was time to conduct research.
@@ -105,7 +110,7 @@
       <!-- END RESEARCH -->
 
       <!-- BEGIN IDEATION -->
-      <div>
+      <div id="ink-tank-ideation">
         <h3>Ideation</h3>
         <div>
           <h4>Surprising insights</h4>
@@ -127,7 +132,7 @@
       <!-- END IDEATION -->
 
       <!-- BEGIN USER PERSONA -->
-      <div>
+      <div id="ink-tank-user-personas">
         <h3>User personas</h3>
         <p>
           After completing the user interviews and survey responses, and organizing my analysis and findings, I had enough data to build out examples of the ideal users for Ink Tank.
@@ -151,8 +156,8 @@
       <!-- END USER PERSONA PICTURES -->
 
       <!-- BEGIN USER JOURNEYS -->
-      <div>
-        <h3>User personas</h3>
+      <div id="ink-tank-user-journeys">
+        <h3>User journeys</h3>
         <p>
           After completing the user personas, it was time to figure out how they think. People aren't static — we're dynamic and experience many different situations.
         </p>
@@ -179,7 +184,7 @@
       <!-- END USER JOURNEY PICTURES -->
 
       <!-- BEGIN TASK FLOWS -->
-      <div>
+      <div id="ink-tank-task-flows">
         <h3>User task flows</h3>
         <p>
           After completing the user personas, it was time to figure out how they think. People aren't static — we're dynamic and experience many different situations.
@@ -216,8 +221,8 @@
       </div>
       <!-- END TASK FLOWS C-->
 
-      <!-- BEGIN TASK FLOWS -->
-      <div>
+      <!-- BEGIN SITE MAP -->
+      <div id="ink-tank-sitemap">
         <h3>Sitemap</h3>
         <p>
           At this stage, Ink Tank was beginning to come together, but it was important to build out the framework. Realistically, there had to be two different sitemaps for the app: one for tattoo lovers, and one for tattoo artists.
@@ -226,9 +231,7 @@
           This stage was crucial for figuring out the total scope for Ink Tank, and prevented the app from spiraling out of control.
         </p>
       </div>
-      <!-- END TASK FLOWS -->
 
-      <!-- BEGIN SITE MAP -->
       <div>
         <picture>
           <source srcset="img\ink-tank\ink-tank-ia-user-sitemap-2.png" media="(max-width: 767px)">
@@ -238,7 +241,7 @@
       <!-- END SITE MAP -->
 
       <!-- BEGIN WIREFRAMES -->
-      <div>
+      <div id="ink-tank-wireframes">
         <h3>Wireframing</h3>
         <h4>Low-fidelity wireframes & prototyping</h4>
         <p>
@@ -291,7 +294,7 @@
       <!-- END WIREFRAME IMAGES -->
 
       <!-- BEGIN USABILITY  -->
-      <div>
+      <div id="ink-tank-usability">
         <h3>Usability testing</h3>
         <h4>Goals</h4>
         <p>22
@@ -312,30 +315,30 @@
           <div>
             <div>
               <div>
-                <img src="img\assets\users.svg" alt="">
+                <img src="img\assets\users.svg" class="icon-large" alt="">
               </div>
               <div>
-                <p>
+                <p class="pink">
                   <strong>6 participants</strong>
                 </p>
               </div>
             </div>
             <div>
               <div>
-                <img src="img\assets\clock.svg" alt="">
+                <img src="img\assets\clock.svg" class="icon-large" alt="">
               </div>
               <div>
-                <p>
+                <p class="pink">
                   <strong>15 to 20 minutes each</strong>
                 </p>
               </div>
             </div>
             <div>
               <div>
-                <img src="img\assets\smartphone.svg" alt="">
+                <img src="img\assets\smartphone.svg" class="icon-large" alt="">
               </div>
               <div>
-                <p>
+                <p class="pink">
                   <strong>Tested on iPhone</strong>
                 </p>
               </div>
@@ -377,7 +380,7 @@
       <!-- END USABILITY -->
 
       <!-- ITERATION -->
-      <div>
+      <div id="ink-tank-iteration">
         <div>
           <h3>Design iteration</h3>
           <h4>Applying the results</h4>
@@ -437,7 +440,7 @@
       <!-- END ITERATION -->
 
       <!-- BEGIN STYLE GUIDE -->
-      <div>
+      <div id="ink-tank-style-guide">
         <h3>Style guide</h3>
         <h4>Easy to read, easy to use</h4>
         <p>
@@ -466,7 +469,7 @@
       <!-- END STYLE GUIDE PICTURE-->
 
       <!-- BEGIN FINAL DESIGN -->
-      <div>
+      <div id="ink-tank-final">
         <h3>Final design</h3>
       </div>
       <!-- END FINAL DESIGN -->
@@ -492,13 +495,12 @@
 
       <!-- BEGIN INTERACTIVE PROTOYPE -->
       <div>
-        <!-- NOTE: iframe is currently not responsive. I plan to modify it with CSS to keep an apsect ratio in the upcoming stages. I plan to use CSS that I found here: https://www.w3schools.com/howto/howto_css_responsive_iframes.asp -->
-        <iframe width="375" height="812" src="https://xd.adobe.com/embed/23b3260f-b464-4d71-7a38-ce7424863719-5582/?fullscreen" allowfullscreen></iframe>
+        <iframe width="320" height="693" src="https://xd.adobe.com/embed/23b3260f-b464-4d71-7a38-ce7424863719-5582/?fullscreen" allowfullscreen></iframe>
       </div>
       <!-- END INTERACTIVE PROTOTYPE -->
 
       <!-- REFLECTION -->
-      <div>
+      <div id="ink-tank-reflection">
         <h2>In reflection</h2>
         <p>
           Ink Tank was my first project for UX Design, and I cannot believe how much I've learned along the way. I've learned new methods of thinking, exploring solutions, and designing screens for users.
@@ -523,7 +525,7 @@
       <!-- ROW 1 -->
       <div>
         <a href="index.html" title="home">
-          <img src="img\assets\dylan-scacchetti-logo-black.svg" alt="dylan scacchetti" width="150" height="50">
+          <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
         </a>
       </div>
       <!-- END ROW 1-->
@@ -531,12 +533,12 @@
       <!-- ROW 2 -->
       <div>
         <!-- COLUMN 1-->
-        <div>
+        <div class="nav">
           <nav>
             <ul>
-              <li><a href="index.html" title="work">Work</a></li>
-              <li><a href="about.html" title="about">About</a></li>
-              <li><a href="mailto:ux.dscacchetti@gmail.com" title="contact">Contact</a></li>
+              <li><a href="index.html" title="work">work</a></li>
+              <li><a href="about.html" title="about">about</a></li>
+              <li><a href="mailto:ux.dscacchetti@gmail.com" title="contact">contact</a></li>
             </ul>
           </nav>
         </div>
@@ -544,14 +546,14 @@
 
         <!-- COLUMN 2-->
         <div>
-          <p>
+          <p class="large">
             Get in touch.
           </p>
           <p>
             Feel free to talk to me about UX design, projects, art, or just say hello!
           </p>
           <div>
-            <a href="mailto:ux.dscacchetti@gmail.com">
+            <a href="mailto:ux.dscacchetti@gmail.com" class="btn">
               Send email
             </a>
           </div>
@@ -564,28 +566,28 @@
             <ul>
               <!-- GITHUB -->
               <li><a href="https://github.com/dscacchetti/" target="_blank" rel="noopener noreferrer" title="GitHub">
-                  <img src="img\assets\github.svg" alt="">
+                  <img src="img\assets\github.svg" class="icon" alt="GitHub">
                 </a></li>
               <!-- TWITTER -->
               <li><a href="https://twitter.com/DylanScacchetti" target="_blank" rel="noopener noreferrer" title="Twitter">
-                  <img src="img\assets\twitter.svg" alt="">
+                  <img src="img\assets\twitter.svg" class="icon" alt="Twitter">
                 </a></li>
               <!-- LINKEDIN -->
               <li><a href="https://www.linkedin.com/in/dylan-scacchetti/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                  <img src="img\assets\linkedin.svg" alt="">
+                  <img src="img\assets\linkedin.svg" class="icon" alt="LinkedIn">
                 </a></li>
               <!-- BEHANCE -->
               <li><a href="https://www.behance.net/dylanscacchetti" target="_blank" rel="noopener noreferrer" title="Behance">
-                  <img src="img\assets\behance.svg" alt="">
+                  <img src="img\assets\behance.svg" class="icon" alt="Behance">
                 </a></li>
               <!-- EMAIL -->
               <li><a href="mailto:ux.dscacchetti@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
-                  <img src="img\assets\mail.svg" alt="">
+                  <img src="img\assets\mail.svg" class="icon" alt="Email">
                 </a></li>
             </ul>
           </div>
-          <div>
-            <a href="#top">Back to top</a>
+          <div class="nav">
+            <a href="#top">back to top</a>
           </div>
         </div>
         <!-- END COLUMN 3 -->
@@ -594,7 +596,7 @@
 
       <!-- ROW 3 -->
       <div>
-        <p>
+        <p class="disclaimer">
           &copy; 2020 Dylan Scacchetti. All Rights Reserved.
         </p>
       </div>
