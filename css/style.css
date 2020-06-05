@@ -84,6 +84,10 @@ small, .text_small {
   color: #e84393 !important;
 }
 
+.bg-gray {
+  background-color: #ebedef !important;
+  padding: 40px 0;
+}
 /* || End typography */
 /* || Image size */
 img {
@@ -227,6 +231,14 @@ main ul {
   list-style: none !important;
 }
 
+main ul.columns  {
+   -webkit-columns: 60px 2;
+   -moz-columns: 60px 2;
+    columns: 60px 2;
+   -moz-column-fill: auto;
+   column-fill: auto;
+ }
+
 main ul li::before {
   content: "\2022";
   color: #9c1e5a;
@@ -235,10 +247,13 @@ main ul li::before {
   width: 1em;
   margin-left: -1em;
 }
+main ul li {
+  margin: 10px 0;
+}
 
 main ol {
   list-style: none;
-  counter-reset: li
+  counter-reset: li;
 }
 
 main ol li::before {
@@ -252,6 +267,18 @@ main ol li::before {
   text-align: right;
   direction: rtl;
   counter-increment: li;
+}
+
+main ol.columns  {
+   -webkit-columns: 60px 2;
+   -moz-columns: 60px 2;
+    columns: 60px 2;
+   -moz-column-fill: auto;
+   column-fill: auto;
+ }
+
+main ol li {
+  margin-bottom: 10px;
 }
 
 #hero {
@@ -348,6 +375,10 @@ main ol li::before {
     width: 50%;
   }
 
+  .col-md-4 {
+    width: 33%;
+  }
+
   .left {
     float: left;
     display: inline-block;
@@ -388,12 +419,18 @@ main ol li::before {
   h1.rspnv {
     font-size: 2.4em;
   }
-}
 
-@media screen and (max-width: 600px) {
   h2.rspnv {
     font-size: 2.1em;
   }
+
+  main ol.columns  {
+     -webkit-columns: 60px 1;
+     -moz-columns: 60px 1;
+      columns: 60px 1;
+     -moz-column-fill: auto;
+     column-fill: auto;
+   }
 }
 
 [class*="col-"] {
