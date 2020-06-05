@@ -99,6 +99,7 @@ img {
 .logo {
   max-width: 150px;
   max-height: auto;
+  padding-top: 15px;
 }
 
 .icon {
@@ -278,7 +279,7 @@ main ol.columns  {
  }
 
 main ol li {
-  margin-bottom: 10px;
+  margin-bottom: 10px 0;
 }
 
 #hero {
@@ -354,17 +355,11 @@ main ol li {
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  header img {
-    padding-top: 15px;
   }
 
   nav {
     width: auto;
     float: right;
-    padding-bottom: 20px;
   }
 
   p {
@@ -412,6 +407,7 @@ main ol li {
   .logo {
     max-width: 50px;
     text-align: unset;
+    padding-top: 15px;
   }
 }
 
