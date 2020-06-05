@@ -19,7 +19,10 @@
   <header id="top">
     <div class="container nav">
       <a href="index.html" title="home">
-        <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
+        <picture>
+          <source srcset="img\assets\ds-logo-white.svg" media="(max-width: 767px)">
+          <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
+        </picture>
       </a>
       <nav>
         <ul>
@@ -36,56 +39,47 @@
   <main>
 
     <!-- HERO -->
-    <div id="hero">
-      <div class="container row">
-        <div>
-          <!-- COLUMN 1 -->
-          <picture>
-            <source srcset="https://dummyimage.com/400x267/258c9c/fff.png&text=Hero+Image" media="(max-width: 479px)"><!-- MOBILE -->
-            <source srcset="https://dummyimage.com/600x400/258c9c/fff.png&text=Hero+Image" media="(max-width: 767px)"><!-- TABLET -->
-            <img src="https://dummyimage.com/1200x800/258c9c/fff.png&text=Hero+Image" alt="Welcome to my site"><!-- DESKTOP -->
-          </picture>
+    <div class="container row" id="hero">
+      <div class="col-md-6 left mt-20 mb-20">
+        <!-- COLUMN 1 -->
+        <picture>
+          <source srcset="https://dummyimage.com/600x400/258c9c/fff.png&text=Hero+Image" media="(max-width: 767px)"><!-- TABLET -->
+          <img src="https://dummyimage.com/1200x800/258c9c/fff.png&text=Hero+Image" alt="Welcome to my site"><!-- DESKTOP -->
+        </picture>
+      </div>
+      <!-- END COLUMN 1 -->
+      <!-- COLUMN 2 -->
+      <div class="col-md-6 right">
+        <h1 class="rspnv">Hello! I’m Dylan.</h1>
+        <p class="large">
+          I'm a UX researcher, designer, & illustrator based in New York.
+        </p>
+        <p>
+          From websites to mobile apps, I strive to create fun and usable products for people around the world. I've worked as a digital marketer specializing in SEO, UX, design, and web analytics.
+        </p>
+        <div class="center">
+          <a href="about.html" class="center btn">More about me</a><!-- BUTTON -->
         </div>
-        <!-- END COLUMN 1 -->
-        <div class="row">
-          <!-- COLUMN 2 -->
-          <!-- Will sit next to Hero image, so I don't plan to center any of the text on this page -->
-          <h1>Hello! I’m Dylan.</h1>
-          <p class="large">
-            I'm a UX researcher, designer, & illustrator based in New York.
-          </p>
-          <p>
-            From websites to mobile apps, I strive to create fun and usable products for people around the world. I went to university to become an animator & illustrator, and found myself picking up economics along the way.
-          </p>
-          <p>
-            Ever since entering the real world, I've worked as a digital marketer specializing in SEO, UX, design, illustartion, and web analytics.
-          </p>
-          <a href="about.html" class="btn">More about me</a><!-- BUTTON -->
-        </div>
-        <!-- END COLUMN 2 -->
       </div>
     </div>
+    <!-- END COLUMN 2 -->
     <!-- END HERO -->
 
     <!-- PROJECTS -->
     <div class="container" id="projects">
-      <h2 class="center rspnv">Featured projects</h2>
-      <p>Check out some of my recent projects, where I do my best to flex UX and UI Design muscles to leave a real impact on clients and users.</p>
-
+      <div class="row offset">
+        <h2 class="center rspnv">Featured projects</h2>
+        <p>Check out some of my recent projects, where I do my best to flex UX and UI Design muscles to leave a real impact on clients and users.</p>
+      </div>
       <!-- INK TANK -->
-      <div id="ink-tank">
-
-        <!-- COLUMN 1 -->
-        <div>
+      <div class="containter row mt-20" id="ink-tank">
+        <div class="col-md-6 col-lg-7 left mt-10 mb-20">
           <picture>
             <source srcset="img\ink-tank\ink-tank-ux-project-2.png" media="(max-width: 767px)">
             <img src="img\ink-tank\ink-tank-ux-project.png" alt="Ink Tank ux project">
           </picture>
         </div>
-        <!-- END COLUMN 1 -->
-
-        <!-- COLUMN 2 -->
-        <div class="row">
+        <div class="col-md-6 col-lg-5 right">
           <h3>Ink Tank</h3>
           <p>
             Ink Tank is a social app for tattoo lovers and tattoo artists. With Ink Tank, users can search for tattoo inspiration, share their favorite designs, and even schedule appointments with a tattoo artist near them.
@@ -93,27 +87,22 @@
           <p>
             For this project, I used Adobe XD, Photoshop, Illustrator, and After Effects. Check out the project page to learn more about my process.
           </p>
-          <a href="ink-tank.html" class="btn">View Ink Tank</a><!-- BUTTON -->
+          <div class="center">
+            <a href="ink-tank.html" class="btn">View Ink Tank</a>
+          </div>
         </div>
-        <!-- END COLUMN 2 -->
-
       </div>
       <!-- END INK TANK -->
 
       <!-- WORDSTORM -->
-      <div class="row">
-
-        <!-- COLUMN 1 -->
-        <div>
+      <div class="container row mt-20" id="wordstorm">
+        <div class="col-md-6 col-lg-7 left mt-10 mb-20">
           <picture>
             <source srcset="img\wordstorm\wordstorm-project-2.jpg" media="(max-width: 767px)"><!-- TABLET -->
             <img src="img\wordstorm\wordstorm-project-1.jpg" alt="WordStorm ux project"><!-- DESKTOP -->
           </picture>
         </div>
-        <!-- END COLUMN 1 -->
-
-        <!-- COLUMN 2 -->
-        <div id="wordstorm">
+        <div class="col-md-6 col-lg-5 right">
           <h3>WordStorm</h3>
           <p>
             WordStorm is a vocabulary learning app for people learning English or people who are looking to improve their skills. In WordStorm, people can test their knowledge daily, study with flashcards, and test their progress with quizzes.
@@ -121,10 +110,10 @@
           <p>
             For this project, I used pen and paper, Adobe Photoshop, and Prott. This was my first project, and taught me the foundations for good research and design.
           </p>
-          <a href="#" class="btn">View WordStorm</a><!-- BUTTON -->
+          <div class="center">
+            <a href="#" class="btn">View WordStorm</a>
+          </div>
         </div>
-        <!-- END COLUMN 2 -->
-
       </div>
       <!-- END WORDSTORM -->
 
@@ -141,7 +130,10 @@
       <!-- ROW 1 -->
       <div>
         <a href="index.html" title="home">
-          <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
+          <picture>
+            <source srcset="img\assets\ds-logo-white.svg" media="(max-width: 767px)">
+            <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
+          </picture>
         </a>
       </div>
       <!-- END ROW 1-->
@@ -150,11 +142,11 @@
       <div>
         <!-- COLUMN 1-->
         <div class="bttm-nav">
-            <ul>
-              <li><a href="index.html" title="work">work</a></li>
-              <li><a href="about.html" title="about">about</a></li>
-              <li><a href="mailto:ux.dscacchetti@gmail.com" title="contact">contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="index.html" title="work">work</a></li>
+            <li><a href="about.html" title="about">about</a></li>
+            <li><a href="mailto:ux.dscacchetti@gmail.com" title="contact">contact</a></li>
+          </ul>
         </div>
         <!-- END COLUMN 1 -->
 
