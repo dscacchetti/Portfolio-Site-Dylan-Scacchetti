@@ -11,6 +11,8 @@ Dark gray: #707070;
 /* || Typography */
 html {
   font-size: 131.3%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 * {
@@ -108,7 +110,6 @@ small, .text_small {
 /* || Image size */
 img {
   width: 100%;
-  height: auto;
 }
 
 /* || End image size */
@@ -239,7 +240,8 @@ main ol li::before {
 /* Contact section */
 #contact {
   background-color: #e84393;
-
+  padding: 10px 0;
+  margin-top: 40px;
 }
 
 #contact p {
