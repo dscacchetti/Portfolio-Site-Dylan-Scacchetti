@@ -77,6 +77,29 @@ small, .text_small {
   font-size: 1.953em !important;
 }
 
+@media screen and (min-width: 601px) {
+  h1.rspnv {
+    font-size: 3.052em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1.rspnv {
+    font-size: 2.4em;
+  }
+}
+@media screen and (min-width: 601px) {
+  h2.rspnv {
+    font-size: 2.4em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2.rspnv {
+    font-size: 2.1em;
+  }
+}
+
 .pink {
   color: #e84393 !important;
 }
@@ -216,7 +239,7 @@ main ol li::before {
 /* Contact section */
 #contact {
   background-color: #e84393;
-  padding: 10px;
+  padding: 10px 0;
   margin-top: 40px;
 }
 
