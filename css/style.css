@@ -92,6 +92,7 @@ small, .text_small {
   background-color: #ebedef !important;
   padding: 40px 0;
 }
+
 /* || End typography */
 /* || Image size */
 img {
@@ -122,8 +123,8 @@ img {
   transform: translateY(5px);
   transition: 0.2s;
 }
-/* End SVG sizes */
 
+/* End SVG sizes */
 /* || Links */
 a:visited {
   color: #551A8B;
@@ -245,13 +246,13 @@ main ul {
   list-style: none !important;
 }
 
-main ul.columns  {
-   -webkit-columns: 60px 2;
-   -moz-columns: 60px 2;
-    columns: 60px 2;
-   -moz-column-fill: auto;
-   column-fill: auto;
- }
+main ul.columns {
+  -webkit-columns: 60px 2;
+  -moz-columns: 60px 2;
+  columns: 60px 2;
+  -moz-column-fill: auto;
+  column-fill: auto;
+}
 
 main ul li::before {
   content: "\2022";
@@ -261,6 +262,7 @@ main ul li::before {
   width: 1em;
   margin-left: -1em;
 }
+
 main ul li {
   margin: 10px 0;
 }
@@ -283,13 +285,13 @@ main ol li::before {
   counter-increment: li;
 }
 
-main ol.columns  {
-   -webkit-columns: 60px 2;
-   -moz-columns: 60px 2;
-    columns: 60px 2;
-   -moz-column-fill: auto;
-   column-fill: auto;
- }
+main ol.columns {
+  -webkit-columns: 60px 2;
+  -moz-columns: 60px 2;
+  columns: 60px 2;
+  -moz-column-fill: auto;
+  column-fill: auto;
+}
 
 main ol li {
   margin-bottom: 10px;
@@ -310,6 +312,7 @@ main ol li {
 #skills h3 {
   margin-top: 0px;
 }
+
 /* End main body list style */
 /* Contact section */
 #contact {
@@ -345,27 +348,30 @@ main ol li {
   margin-left: auto;
   margin-right: auto;
 }
+
 .offset-lg {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .offset-xl {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .offset-sm {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .center {
   text-align: center;
 }
 
 /* End layout styling */
-
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
@@ -413,6 +419,7 @@ main ol li {
   .col-lg-5 {
     width: 41.66%;
   }
+
   #hero .right {
     padding-top: 40px;
   }
@@ -420,38 +427,41 @@ main ol li {
 
 @media only screen and (min-width: 1440px) {
   #hero {
-  max-width: 1800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#hero .right {
-  padding-top: 200px;
-  padding-right: 100px;
-}
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-nav {
-  font-size: 1.5em;
-}
-.bttm-nav {
-  font-size: 1.5em;
-}
-.col-xl-7 {
-  width: 58.33%;
-}
-.col-xl-5 {
-  width: 41.66%;
-}
+  #hero .right {
+    padding-top: 200px;
+    padding-right: 100px;
+  }
 
-.logo {
-  max-width: 200px;
-  text-align: unset;
-  padding-top: 20px;
-}
+  nav {
+    font-size: 1.5em;
+  }
 
-.icon-down {
-  max-width: 60px;
-}
+  .bttm-nav {
+    font-size: 1.5em;
+  }
 
+  .col-xl-7 {
+    width: 58.33%;
+  }
+
+  .col-xl-5 {
+    width: 41.66%;
+  }
+
+  .logo {
+    max-width: 200px;
+    text-align: unset;
+    padding-top: 20px;
+  }
+
+  .icon-down {
+    max-width: 60px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -471,16 +481,17 @@ nav {
     font-size: 2.1em;
   }
 
-  main ol.columns  {
-     -webkit-columns: 60px 1;
-     -moz-columns: 60px 1;
-      columns: 60px 1;
-     -moz-column-fill: auto;
-     column-fill: auto;
-   }
-   #hero .right {
-     text-align: center;
-   }
+  main ol.columns {
+    -webkit-columns: 60px 1;
+    -moz-columns: 60px 1;
+    columns: 60px 1;
+    -moz-column-fill: auto;
+    column-fill: auto;
+  }
+
+  #hero .right {
+    text-align: center;
+  }
 }
 
 [class*="col-"] {
@@ -528,75 +539,204 @@ nav {
 }
 
 /* Animation */
-
 @keyframes steam1 {
-  from {transform: translate(0,100px);}
-  to {transform: translate(-400px,-150px);}
+  from {
+    transform: translate(0, 100px);
+  }
+
+  to {
+    transform: translate(-400px, -150px);
+  }
 }
-.steam1 {animation: steam1 4s ease-out infinite;}
+
+.steam1 {
+  animation: steam1 4s ease-out infinite;
+}
+
 @keyframes steam-1 {
-  from {transform: scale(1);}
-  to {transform: scale(2);}
-  0% {opacity: 0;}
-  50% {opacity: 1;}
-  100% {opacity: 0;}
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(2);
+  }
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-.steam-1 {animation: steam-1 4s ease-out infinite;}
+
+.steam-1 {
+  animation: steam-1 4s ease-out infinite;
+}
 
 @keyframes steam2 {
-  from {transform: translate(0,100px);}
-  to {transform: translate(-500px,-150px);}
+  from {
+    transform: translate(0, 100px);
+  }
+
+  to {
+    transform: translate(-500px, -150px);
+  }
 }
-.steam2 {animation: steam2 4s ease-out infinite 0.5s;}
+
+.steam2 {
+  animation: steam2 4s ease-out infinite 0.5s;
+}
+
 @keyframes steam-2 {
-  from {transform: scale(1);}
-  to {transform: scale(2);}
-  0% {opacity: 0;}
-  50% {opacity: 1;}
-  100% {opacity: 0;}
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(2);
+  }
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-.steam-2 {animation: steam-2 4s ease-out infinite 0.5s;}
+
+.steam-2 {
+  animation: steam-2 4s ease-out infinite 0.5s;
+}
 
 @keyframes steam3 {
-  from {transform: translate(0,100px);}
-  to {transform: translate(-400px,-150px);}
+  from {
+    transform: translate(0, 100px);
+  }
+
+  to {
+    transform: translate(-400px, -150px);
+  }
 }
-.steam3 {animation: steam3 4s ease-out infinite 1s;}
+
+.steam3 {
+  animation: steam3 4s ease-out infinite 1s;
+}
+
 @keyframes steam-3 {
-  from {transform: scale(1);}
-  to {transform: scale(2);}
-  0% {opacity: 0;}
-  50% {opacity: 1;}
-  100% {opacity: 0;}
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(2);
+  }
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-.steam-3 {animation: steam-3 4s ease-out infinite 1s;}
+
+.steam-3 {
+  animation: steam-3 4s ease-out infinite 1s;
+}
 
 @keyframes steam4 {
-  from {transform: translate(0,100px);}
-  to {transform: translate(-500px,-150px);}
+  from {
+    transform: translate(0, 100px);
+  }
+
+  to {
+    transform: translate(-500px, -150px);
+  }
 }
-.steam4 {animation: steam4 4s ease-out infinite 1.5s;}
+
+.steam4 {
+  animation: steam4 4s ease-out infinite 1.5s;
+}
+
 @keyframes steam-4 {
-  from {transform: scale(1);}
-  to {transform: scale(2);}
-  0% {opacity: 0;}
-  50% {opacity: 1;}
-  100% {opacity: 0;}
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(2);
+  }
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-.steam-4 {animation: steam-4 4s ease-out infinite 1.5s;}
+
+.steam-4 {
+  animation: steam-4 4s ease-out infinite 1.5s;
+}
 
 @keyframes steam5 {
-  from {transform: translate(0,100px);}
-  to {transform: translate(-400px,-150px);}
+  from {
+    transform: translate(0, 100px);
+  }
+
+  to {
+    transform: translate(-400px, -150px);
+  }
 }
-.steam5 {animation: steam5 4s ease-out infinite 2s;}
+
+.steam5 {
+  animation: steam5 4s ease-out infinite 2s;
+}
+
 @keyframes steam-5 {
-  from {transform: scale(1);}
-  to {transform: scale(2);}
-  0% {opacity: 0;}
-  50% {opacity: 1;}
-  100% {opacity: 0;}
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(2);
+  }
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-.steam-5 {animation: steam-5 4s ease-out infinite 2s;}
+
+.steam-5 {
+  animation: steam-5 4s ease-out infinite 2s;
+}
 
 /* End SVG animation */
