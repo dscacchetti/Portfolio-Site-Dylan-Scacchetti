@@ -175,12 +175,10 @@ a:active {
 /* Navigation */
 header {
   background-color: #e84393;
-  text-align: center;
+  text-align: unset;
 }
 
 .nav {
-  display: inline-block;
-  width: 100%;
   font-size: 1.1em;
 }
 
@@ -201,10 +199,36 @@ header {
   padding: 0;
 }
 
-.nav ul li {
-  display: inline-block;
-  padding: 0 15px;
+/* Navtoggle */
+.navtoggle li:not(:last-child) {
+  display: none;
 }
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .menu {
+  position: absolute;
+  right: 0;
+  top: 25px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+/* End Navtoggle */
 
 .bttm-nav {
   display: inline-block;
@@ -386,6 +410,19 @@ main ol li {
     font-size: 1em;
   }
 
+  .nav ul li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   .col-md-6 {
     width: 50%;
   }
@@ -469,6 +506,15 @@ main ol li {
     max-width: 50px;
     text-align: unset;
     padding-top: 15px;
+  }
+  .nav {
+    margin-bottom: 0px;
+  }
+  .nav ul {
+    margin-top: 0px;
+  }
+  .nav ul li {
+    text-align: right !important;
   }
 }
 
