@@ -555,10 +555,7 @@
       <!-- ROW 1 -->
       <div>
         <a href="index.html" title="home">
-          <picture>
-            <source srcset="img\assets\ds-logo-white.svg" media="(max-width: 767px)">
-            <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
-          </picture>
+          <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
         </a>
       </div>
       <!-- END ROW 1-->
