@@ -116,7 +116,6 @@ img {
 
 .icon-down {
   max-width: 40px;
-  stroke: #e84393;
 }
 
 .icon-down:hover {
@@ -154,7 +153,7 @@ a:active {
   border-radius: 10px;
   border-bottom: 2px solid #12474F;
   transition-duration: 0.2s;
-  transition-property: 'background-color';
+  transition-property: background-color;
 }
 
 .btn:hover {
@@ -404,7 +403,6 @@ main ol li {
 .disclaimer {
   font-size: 0.8em !important;
 }
-
 /* Contact section */
 /*Layout styling */
 .container {
@@ -494,6 +492,8 @@ main ol li {
     clear: both;
     display: table;
   }
+
+
 }
 
 @media only screen and (min-width: 1024px) {
