@@ -10,24 +10,21 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
 
   <!-- HEADER -->
   <header id="top">
-    <div class="container nav">
+    <div class="container nav medium">
       <div class="navtoggle" id="myNavtoggle">
         <a href="index.html" title="home">
-          <picture>
-            <source srcset="img\assets\ds-logo-white.svg" media="(max-width: 767px)">
-            <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
-          </picture>
+          <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
         </a>
         <nav>
           <ul>
-            <li><a href="#projects" title="work" id="main">work</a></li>
+            <li><a href="#projects" title="work" class="here">work</a></li>
             <li><a href="about.html" title="about">about</a></li>
             <li><a href="#contact" title="contact">contact</a></li>
             <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()">
@@ -49,7 +46,7 @@
   <main>
 
     <!-- HERO -->
-    <div class="container row mb-0" id="hero">
+    <div class="hero container row mb-0 mt-20" id="hero">
       <div class="col-md-6 col-xl-7 left mt-0 mb-20">
         <!-- COLUMN 1 -->
         <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 1200 900" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -232,7 +229,7 @@
       <!-- END COLUMN 1 -->
       <!-- COLUMN 2 -->
       <div class="col-md-6 col-xl-5 right">
-        <h1 class="rspnv">Hello! I’m Dylan.</h1>
+        <h1 class="h1-rspnv">Hello! I’m Dylan.</h1>
         <p class="large">
           I'm a UX researcher, designer, & illustrator based in New York.
         </p>
@@ -253,7 +250,7 @@
     <!-- PROJECTS -->
     <div class="container" id="projects">
       <div class="row offset">
-        <h2 class="center rspnv">Featured projects</h2>
+        <h2 class="center h2-rspnv">Featured projects</h2>
         <p>Check out some of my recent projects, where I do my best to flex UX and UI Design muscles to leave a real impact on clients and users.</p>
       </div>
       <!-- INK TANK -->
@@ -309,16 +306,13 @@
   <!-- END MAIN -->
 
   <!-- FOOTER -->
-  <footer id="contact">
+  <footer class="contact" id="contact">
     <div class="container center">
 
       <!-- ROW 1 -->
       <div>
         <a href="index.html" title="home">
-          <picture>
-            <source srcset="img\assets\ds-logo-white.svg" media="(max-width: 767px)">
-            <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
-          </picture>
+          <img src="img\assets\dylan-scacchetti-logo-white.svg" alt="dylan scacchetti" class="logo">
         </a>
       </div>
       <!-- END ROW 1-->
@@ -326,7 +320,7 @@
       <!-- ROW 2 -->
       <div>
         <!-- COLUMN 1-->
-        <div class="bttm-nav">
+        <div class="bttm-nav medium">
           <ul>
             <li><a href="index.html#projects" title="work">work</a></li>
             <li><a href="about.html" title="about">about</a></li>
@@ -384,7 +378,7 @@
 
         <!-- ROW 3 -->
         <div>
-          <p class="disclaimer">
+          <p class="small">
             &copy; 2020 Dylan Scacchetti. All Rights Reserved.
           </p>
         </div>

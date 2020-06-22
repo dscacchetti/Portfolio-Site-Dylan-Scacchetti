@@ -1,6 +1,3 @@
-/* exported menuToggle */
-/* exported menuIcon */
-
 console.log('Hello! Welcome to my site! If you see something funky, let me know so I can fix it. :-)');
 
 function menuToggle() {
@@ -13,5 +10,8 @@ function menuToggle() {
 }
 
 function menuIcon(x) {
-  x.classList.toggle('menu-close')
+  x.classList.toggle('menu-close');
 }
+
+/* exported menuToggle */
+/* exported menuIcon */

@@ -15,10 +15,6 @@ html {
   overflow-y: scroll;
 }
 
-a .icon-down {
-  scroll-behavior: smooth;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -36,13 +32,8 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.65;
-  font-size: .85em;
+  font-size: 1em;
   color: #000000
-}
-
-h1, h2, h3, h4 {
-  margin: 2.75rem 0 1.05rem;
-  line-height: 1.15;
 }
 
 h1 {
@@ -51,6 +42,8 @@ h1 {
   font-size: 3.052em;
   font-weight: 400;
   color: #9c1e5a;
+  margin: 2.75rem 0 1.05rem;
+  line-height: 1.15;
 }
 
 h2 {
@@ -58,6 +51,8 @@ h2 {
   font-size: 2.4em;
   font-weight: 400;
   color: #9c1e5a;
+  margin: 2.75rem 0 1.05rem;
+  line-height: 1.15;
 }
 
 h3 {
@@ -65,31 +60,38 @@ h3 {
   font-size: 1.7em;
   font-weight: 400;
   color: #9c1e5a;
+  margin: 2.75rem 0 1.05rem;
+  line-height: 1.15;
 }
 
 h4 {
   font-size: 1.2em;
   font-weight: 700;
-  font-weight: 700;
   color: #e84393;
+  margin: 2.75rem 0 1.05rem;
+  line-height: 1.15;
 }
 
-small, .text_small {
+small, .small {
   font-size: 0.8em;
   color: #707070
 }
 
 .large {
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 1.5em !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+}
+
+.medium {
+  font-size: 1.1em;
 }
 
 .pink {
-  color: #e84393 !important;
+  color: #e84393;
 }
 
 .bg-gray {
-  background-color: #ebedef !important;
+  background-color: #ebedef;
   padding: 40px 0;
 }
 
@@ -177,24 +179,20 @@ header {
   text-align: unset;
 }
 
-.nav {
-  font-size: 1.1em;
-}
-
 .nav a {
-  color: #ffffff !important;
-  text-decoration: none !important;
+  color: #ffffff;
+  text-decoration: none;
   font-variant: small-caps;
   font-weight: 700;
 }
 
 .nav a:hover,
 .nav a:focus {
-  color: #e8d85a !important;
+  color: #e8d85a;
 }
 
 .nav ul {
-  list-style: none !important;
+  list-style: none;
   padding: 0;
 }
 
@@ -246,6 +244,9 @@ header {
 /* Rotate first bar */
 .menu-close .menu-bar1 {
   -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+  -moz-transform: rotate(-45deg) translate(-7px, 6px);
+  -ms-transform: rotate(-45deg) translate(-7px, 6px);
+  -o-transform: rotate(-45deg) translate(-7px, 6px);
   transform: rotate(-45deg) translate(-7px, 6px);
 }
 
@@ -257,22 +258,31 @@ header {
 /* Rotate last bar */
 .menu-close .menu-bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  -moz-transform: rotate(45deg) translate(-8px, -8px);
+  -ms-transform: rotate(45deg) translate(-8px, -8px);
+  -o-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .menu-open .menu-bar1 {
   -webkit-transform: rotate(45deg) translate(7px, -6px);
+  -moz-transform: rotate(45deg) translate(7px, -6px);
+  -ms-transform: rotate(45deg) translate(7px, -6px);
+  -o-transform: rotate(45deg) translate(7px, -6px);
   transform: rotate(45deg) translate(7px, -6px);
 }
 
 /* Fade out the second bar */
 .menu-open .menu-bar2 {
-  opacity: 100;
+  opacity: 1;
 }
 
 /* Rotate last bar */
 .menu-open .menu-bar3 {
   -webkit-transform: rotate(-45deg) translate(8px, 8px);
+  -moz-transform: rotate(-45deg) translate(8px, 8px);
+  -ms-transform: rotate(-45deg) translate(8px, 8px);
+  -o-transform: rotate(-45deg) translate(8px, 8px);
   transform: rotate(-45deg) translate(8px, 8px);
 }
 
@@ -280,24 +290,23 @@ header {
 .bttm-nav {
   display: inline-block;
   width: 100%;
-  font-size: 1.1em;
   margin-top: -20px;
 }
 
 .bttm-nav a {
-  color: #ffffff !important;
-  text-decoration: none !important;
+  color: #ffffff;
+  text-decoration: none;
   font-variant: small-caps;
   font-weight: 700;
 }
 
 .bttm-nav a:hover,
 .bttm-nav a:focus {
-  color: #e8d85a !important;
+  color: #e8d85a;
 }
 
 .bttm-nav ul {
-  list-style: none !important;
+  list-style: none;
   padding: 0;
 }
 
@@ -306,15 +315,15 @@ header {
   padding: 0 15px;
 }
 
-#main {
-  text-decoration: underline !important;
-  text-decoration-color: #e8d85a !important;
+nav .here {
+  text-decoration: underline;
+  text-decoration-color: #e8d85a;
 }
 
 /* End navigation */
 /* Main body list style */
 main ul {
-  list-style: none !important;
+  list-style: none;
 }
 
 main ul.columns {
@@ -368,41 +377,22 @@ main ol li {
   margin-bottom: 10px;
 }
 
-#hero {
-  margin-top: 20px;
-}
-
-#ink-tank h3 {
-  margin-top: 0px;
-}
-
-#wordstorm h3 {
-  margin-top: 0px;
-}
-
-#skills h3 {
-  margin-top: 0px;
-}
-
 /* End main body list style */
 /* Contact section */
-#contact {
+.contact {
   background-color: #9c1e5a;
   padding: 10px 0;
   margin-top: 40px;
 }
 
-#contact p {
+.contact p {
   color: #ffffff;
 }
 
-#contact ul {
-  list-style: none !important;
+.contact ul {
+  list-style: none;
 }
 
-.disclaimer {
-  font-size: 0.8em !important;
-}
 /* Contact section */
 /*Layout styling */
 .container {
@@ -452,10 +442,6 @@ main ol li {
     float: right;
   }
 
-  p {
-    font-size: 1em;
-  }
-
   .nav ul li {
     display: inline-block;
     padding: 0 15px;
@@ -479,12 +465,10 @@ main ol li {
 
   .left {
     float: left;
-    display: inline-block;
   }
 
   .right {
     float: right;
-    display: inline-block;
   }
 
   .row::after {
@@ -505,28 +489,24 @@ main ol li {
     width: 41.66%;
   }
 
-  #hero .right {
+  .hero .right {
     padding-top: 40px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  #hero {
+  .hero {
     max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  #hero .right {
+  .hero .right {
     padding-top: 200px;
     padding-right: 100px;
   }
 
-  nav {
-    font-size: 1.5em;
-  }
-
-  .bttm-nav {
+  .medium {
     font-size: 1.5em;
   }
 
@@ -551,7 +531,6 @@ main ol li {
 
 @media only screen and (max-width: 767px) {
   .logo {
-    max-width: 50px;
     text-align: unset;
     padding-top: 15px;
   }
@@ -559,19 +538,19 @@ main ol li {
 
 @media screen and (max-width: 600px) {
   .nav {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .nav ul {
-    margin-top: 0px;
+    margin-top: 0;
   }
   .nav ul li {
-    text-align: right !important;
+    text-align: right;
   }
-  h1.rspnv {
+  .h1-rspnv {
     font-size: 2.4em;
   }
 
-  h2.rspnv {
+  .h2-rspnv {
     font-size: 2.1em;
   }
 
@@ -583,7 +562,7 @@ main ol li {
     column-fill: auto;
   }
 
-  #hero .right {
+  .hero .right {
     text-align: center;
   }
 }
@@ -593,7 +572,7 @@ main ol li {
 }
 
 .mt-0 {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .mt-10 {
@@ -613,7 +592,7 @@ main ol li {
 }
 
 .mb-0 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .mb-10 {
@@ -635,11 +614,11 @@ main ol li {
 /* Animation */
 @keyframes steam1 {
   from {
-    transform: translate(0, 100px);
+    transform: translate(0, 100px) scale(1);
   }
 
   to {
-    transform: translate(-400px, -150px);
+    transform: translate(-400px, -150px) scale(2);
   }
 }
 
@@ -648,14 +627,6 @@ main ol li {
 }
 
 @keyframes steam-1 {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(2);
-  }
-
   0% {
     opacity: 0;
   }
@@ -675,11 +646,11 @@ main ol li {
 
 @keyframes steam2 {
   from {
-    transform: translate(0, 100px);
+    transform: translate(0, 100px) scale(1);
   }
 
   to {
-    transform: translate(-500px, -150px);
+    transform: translate(-500px, -150px) scale(2);
   }
 }
 
@@ -688,14 +659,6 @@ main ol li {
 }
 
 @keyframes steam-2 {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(2);
-  }
-
   0% {
     opacity: 0;
   }
@@ -715,11 +678,11 @@ main ol li {
 
 @keyframes steam3 {
   from {
-    transform: translate(0, 100px);
+    transform: translate(0, 100px) scale(1);
   }
 
   to {
-    transform: translate(-400px, -150px);
+    transform: translate(-400px, -150px) scale(2);
   }
 }
 
@@ -728,14 +691,6 @@ main ol li {
 }
 
 @keyframes steam-3 {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(2);
-  }
-
   0% {
     opacity: 0;
   }
@@ -755,11 +710,11 @@ main ol li {
 
 @keyframes steam4 {
   from {
-    transform: translate(0, 100px);
+    transform: translate(0, 100px) scale(1);
   }
 
   to {
-    transform: translate(-500px, -150px);
+    transform: translate(-500px, -150px) scale(2);
   }
 }
 
@@ -768,14 +723,6 @@ main ol li {
 }
 
 @keyframes steam-4 {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(2);
-  }
-
   0% {
     opacity: 0;
   }
@@ -795,11 +742,11 @@ main ol li {
 
 @keyframes steam5 {
   from {
-    transform: translate(0, 100px);
+    transform: translate(0, 100px) scale(1);
   }
 
   to {
-    transform: translate(-400px, -150px);
+    transform: translate(-400px, -150px) scale(2);
   }
 }
 
@@ -808,14 +755,6 @@ main ol li {
 }
 
 @keyframes steam-5 {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(2);
-  }
-
   0% {
     opacity: 0;
   }
